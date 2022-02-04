@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends List</title>
+    ${head}
+  </head>
+  <body>
+    <h1>My friends</h1>
+    <ul>
+      ${friends.map(friend =>`
+      <li><a href="${path}/${friend.handle}">${friend.name}</a></li>
+      ` ).join("")}
+    </ul>
+  </body>
+</html>
